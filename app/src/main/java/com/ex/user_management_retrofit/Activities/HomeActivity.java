@@ -42,7 +42,6 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         sharedPrefManager = new SharedPrefManager(getApplicationContext());
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
 
 
     }
@@ -68,7 +67,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     void loadFragment(Fragment fragment) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.relativelayout, fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
     }
 
     @Override
